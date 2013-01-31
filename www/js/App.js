@@ -8,7 +8,9 @@ enyo.kind({
 	events: {
 	},
 	components: [
-		{kind: "onyx.Toolbar", name: "toolbar"}
+		{kind: "onyx.Toolbar", name: "toolbar", components: [
+				{kind: "onyx.Button", content: "testos", name: "button"}
+			]}
 	],
 	create: function() {
 		this.inherited(arguments);
